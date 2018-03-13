@@ -8,4 +8,6 @@
     <string name="email_hint">Email Hint</string>
     <string name="save">Save</string>
     <string name="revert">Revert</string>
+    <string name="title_activity_job_scheduler">JobSchedulerActivity</string>
+    <string name="job_status">Job ID %s %s</string>
 </resources>

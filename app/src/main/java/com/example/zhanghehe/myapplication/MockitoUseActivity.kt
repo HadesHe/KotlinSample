@@ -9,7 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class MockitoUseActivity : AppCompatActivity() {
 
     private lateinit var nameText: EditText
     private lateinit var emailText: EditText

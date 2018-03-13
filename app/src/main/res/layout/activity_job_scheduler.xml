@@ -1,0 +1,213 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/onstart_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="26dp"
+                android:text="onstarttask" />
+
+            <TextView
+                android:id="@+id/onstop_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:text="onstoptask" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/task_params"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/finished_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="finish_job_button_text" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="duration_time"
+                    android:labelFor="@id/duration_time"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/duration_time"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="default_duration_time" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="connectivity"
+                    android:textSize="20dp"
+                    android:gravity="center"
+
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/checkbox_any"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="any" />
+
+                    <RadioButton
+                        android:id="@+id/checkbox_unmetered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="unmetered" />
+
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="delay"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/delay_time"
+                        android:text="timing" />
+
+                    <EditText
+                        android:id="@+id/delay_time"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="default_delay_time" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/deadline_time"
+                        android:text="deadline"
+                        />
+
+                    <EditText
+                        android:id="@+id/deadline_time"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="default_deadline_time" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center_vertical"
+                    android:text="charging_caption"
+                    android:textSize="20dp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkbox_charging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="charging_text" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center_vertical"
+                    android:textSize="20dp"
+                    android:text="idle_caption" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_idle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="idle_mode_text" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/schedule_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="schedule_job_button_text" />
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cancel_all_jobs_button_text" />
+    </LinearLayout>
+
+</ScrollView>

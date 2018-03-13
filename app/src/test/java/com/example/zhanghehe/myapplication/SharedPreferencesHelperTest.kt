@@ -33,8 +33,15 @@ class SharedPreferencesHelperTest {
     @Mock private lateinit var mockBrokenEditor:SharedPreferences.Editor
 
 
+    var c=sum(3,5)
+
+    fun sum(a:Int,b:Int):Int{
+        return a + b
+    }
+
     @Before
     fun setUp() {
+
         sharedPreferenceEntry=SharedPreferenceEntry(TEST_NAME,TEST_DATEOFBIRTH,TEST_EMAIL)
 
         mockSharedPreferenceHelper=createMockSharedPreference()
