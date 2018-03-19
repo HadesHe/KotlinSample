@@ -18,15 +18,7 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".jobscheduler.MyJobService"
-            android:exported="true"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <activity
-            android:name=".jobscheduler.JobSchedulerActivity"
-            android:label="@string/title_activity_job_scheduler"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

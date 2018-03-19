@@ -17,8 +17,8 @@ class LauncherActivity : AppCompatActivity() {
             startActivity(Intent(this@LauncherActivity,MockitoUseActivity::class.java))
         }
 
-        btnJobScheduler.setOnClickListener{
-            startActivity(Intent(this@LauncherActivity,JobSchedulerActivity::class.java))
+        btnHelloWorld.setOnClickListener{
+//            startActivity(Intent(this@LauncherActivity,JobSchedulerActivity::class.java))
         }
 
 

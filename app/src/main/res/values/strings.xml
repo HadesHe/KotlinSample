@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">JobScheduler</string>
     <string name="settings_title">Title</string>
     <string name="name_label">Name</string>
     <string name="name_hint">Name Hint</string>
