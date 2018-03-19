@@ -3,7 +3,7 @@ package com.example.zhanghehe.myapplication
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.zhanghehe.myapplication.jobscheduler.JobSchedulerActivity
+import com.example.zhanghehe.myapplication.ui.HelloUnitTestActivity
 import kotlinx.android.synthetic.main.activity_launcher.*
 
 class LauncherActivity : AppCompatActivity() {
@@ -18,7 +18,7 @@ class LauncherActivity : AppCompatActivity() {
         }
 
         btnHelloWorld.setOnClickListener{
-//            startActivity(Intent(this@LauncherActivity,JobSchedulerActivity::class.java))
+            startActivity(Intent(this@LauncherActivity,HelloUnitTestActivity::class.java))
         }
 
 
